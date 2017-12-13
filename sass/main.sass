@@ -1,0 +1,740 @@
+$color:#5363db
+body
+  margin: 0
+  padding: 0
+  width: 100%
+#wrapper
+  position: relative
+  width: 100%
+  margin: 0
+  padding: 0
+.layout
+  display: block
+  width: 1170px
+  margin: 0 auto
+.primary
+  position: fixed
+  z-index: 1000
+  width: 100%
+  background: #fff
+  top: 0
+  margin: 20px 0
+.primary .logo
+  text-align: center
+  p, h1
+    margin: 0
+.nav
+  margin: 0
+  padding: 0
+  position: absolute
+  top: 20px
+  margin-left: 95px
+  font-family: OpenSansSemiboldRegular, sans-serif
+  font-size: 14px
+  .menu__item
+    list-style: none
+    float: left
+    padding-right: 30px
+  .menu__item:nth-child(4)
+    padding-left: 370px
+  li.menu__item .link.menu__link:hover span:after
+    content: ""
+    height: 1px
+    width: 60%
+    background-color: #5b6ceb
+    display: inline-block
+    position: absolute
+    margin: 0 auto
+    left: 0
+    right: 0
+    bottom: -5px
+  li.menu__item .link.menu__link span
+    position: relative
+    text-align: center
+  .menu__link
+    text-decoration: none
+    color: #000
+    &:hover
+      color: #5363db
+.trial
+  position: relative
+  width: 100%
+  height: 500px
+  background: url(../images/img-01.png) no-repeat
+  background-size: cover
+  font-family: OpenSansSemiboldRegular, sans-serif
+  font-size: 26px
+  margin-top: 120px
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    position: absolute
+    z-index: 1
+    background-color: rgba(107, 121, 226, 0.8)
+  #trial-class
+    position: relative
+    z-index: 2
+    float: left
+    margin-left: 330px
+    margin-top: 70px
+    width: 260px
+    height: 350px
+    border-radius: 10px
+    background-color: #ffffff
+    padding-left: 20px
+    font-family: Open Sans, sans-serif
+    font-size: 14px
+  .client-name
+    padding: 10px 0 10px 5px
+    margin: 10px 0 10px 0
+    color: #b2b2b2
+    background-color: #f2f2f2
+    border-radius: 7px
+    border: 0px
+    width: 220px
+  .client-phone
+    padding: 10px 0 10px 5px
+    margin: 10px 0 10px 0
+    color: #b2b2b2
+    background-color: #f2f2f2
+    border-radius: 7px
+    border: 0px
+    width: 220px
+  .choose-class
+    padding: 10px 0 10px 5px
+    margin: 10px 0 10px 0
+    color: #b2b2b2
+    background-color: #f2f2f2
+    border-radius: 7px
+    width: 220px
+    border: 0px
+  .send
+    margin-left: 95px
+    padding-left: 50px
+    padding-right: 50px
+    padding-top: 15px
+    padding-bottom: 15px
+    background-color: $color
+    color: #ffffff
+    border-radius: 7px
+    border: 0px
+    margin-top: 10px
+    font-family: OpenSans, sans-serif
+    font-size: 16px
+    font-weight: 700
+  h3
+    color: $color
+    font-size: 25px
+  .caption
+    position: relative
+    z-index: 2
+    margin-left: 675px
+    padding-top: 95px
+    h2
+      color: #fff
+      text-transform: uppercase
+      font-family: OpenSans, sans-serif
+      font-size: 48px
+      font-weight: 700
+    h3
+      color: #fff
+      font-size: 40px
+      font-family: 'Princess Sofia', cursive
+.yoga-program
+  h3
+    text-transform: uppercase
+    color: $color
+    text-align: center
+    margin-top: 91px
+    margin-bottom: 17px
+    font-family: OpenSans, sans-serif
+    font-weight: 700
+    font-size: 30px
+  .our-cls
+    text-align: center
+    font-size: 28px
+    font-family: 'Princess Sofia', cursive
+    margin-bottom: 80px
+
+  .classes
+    margin-bottom: 125px
+    padding: 0
+    li
+      width: 555px
+      height: 300px
+      display: inline-block
+      box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+      border-radius: 14px
+      margin: 0 20px 20px 0
+      .crop
+        float: left
+        overflow: hidden
+        img
+          border-top-left-radius: 14px
+          border-bottom-left-radius: 14px
+    .cls-describe
+      float: left
+      margin-left: 30px
+  .cls-caption
+    text-transform: uppercase
+    font-family: OpenSans, sans-serif
+    font-weight: 700
+    font-size: 20px
+    color: #777
+    margin-top: 50px
+    margin-bottom: 35px
+  p
+    color: #555
+    font-family: OpenSans, sans-serif
+    font-size: 14px
+    margin-bottom: 20px
+  a
+    color: #a9a9a9
+    font-family: OpenSans, sans-serif
+    font-size: 14px
+    text-decoration: none
+    margin-bottom: 50px
+    &:hover
+      color: $color
+.gallery
+  margin: 0
+  padding: 0
+  width: 100%
+  .size1
+    width: 100%
+  .size2
+    width: 25%
+  .size4
+    width: 25%
+  .grid-item
+    position: relative
+    .img
+      width: 100%
+      height: auto
+      display: block
+    .cover__item__gallery
+      background-color: rgba(123, 136, 238, 0.8)
+      position: absolute
+      width: 100%
+      top: 0
+      bottom: 0
+      display: none
+      a
+        display: block
+        width: 100%
+        height: 100%
+        text-decoration: none
+        i.fa
+          color: $color
+          font-size: 25px
+          background-color: #fff
+          opacity: 1
+          border-radius: 50%
+          width: 60px
+          height: 60px
+          display: block
+          position: relative
+          top: 40%
+          left: 40%
+          &:before
+            position: relative
+            top: 17px
+            left: 17px
+.about-us
+  display: block
+  .about-us__text
+    float: left
+    width: 40%
+  .about-us__h3
+    font-family: Open Sans, sans-serif
+    font-weight: 700
+    font-size: 30px
+    color: #5b6ceb
+    text-transform: uppercase
+    margin-top: 155px
+  .about-us__p
+    font-family: Open Sans, sans-serif
+    font-size: 14px
+    margin-top: 30px
+    //slider
+  .sl
+    width: 48%
+    float: left
+    outline: none
+    box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+    border-radius: 20px
+    margin: 125px 0
+    .slick-list,
+    .sl__slide,
+    .sl__img
+      border-radius: 20px
+    .slick-prev, .slick-next
+      top: 50%
+      z-index: 2
+      border-radius: 50%
+      background-color: #fff
+      width: 50px
+      height: 50px
+      box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+    .slick-prev
+      left: -25px
+    .slick-next
+      right: -25px
+    .slick-prev:before
+      content: '\f104'
+      color: #5b6ceb
+    .slick-next:before
+      content: '\f105'
+      color: #5b6ceb
+.yoga-benefits
+  position: relative
+  height: auto
+  background: url(../images/lake.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  clear: both
+  width: 100%
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    position: absolute
+    z-index: 1
+    background-color: rgba(107, 121, 226, 0.9)
+  ul
+    position: relative
+    z-index: 2
+    margin: 0
+    padding: 0
+    .block
+      position: relative
+      display: inline-block
+      width: 23%
+      color: #fff
+      text-align: center
+      margin-left: 10px
+      margin-right: 10px
+    .top
+      margin-top: 125px
+    .bottom
+      margin-top: 60px
+    .benefits-caption
+      color: #fff
+      text-transform: uppercase
+      display: inline-block
+      text-align: center
+      margin: 30px 0 25px 0
+      font-size: 18px
+      font-family: Open Sans, sans-serif
+      font-weight: 700
+    .benefits-describe
+      display: inline-block
+      font-size: 16px
+      font-family: Open Sans, sans-serif
+.classes-buy
+  .subscription
+    margin: 0
+    padding: 0
+    .price
+      float: left
+      list-style: none
+      padding-right: 30px
+      color: #fff
+      font-family: Open Sans, sans-serif
+      .price__h3
+        background-color: #5b6ceb
+        padding: 50px 40px 50px 100px
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+        margin-bottom: 50px
+        .price__h3__dollar
+          font-size: 32px
+        .price__h3__num
+          font-size: 67px
+        .price__h3__month
+          font-size: 18px
+          text-transform: uppercase
+    #buy-form
+      position: relative
+      width: 360px
+      z-index: 2
+      //height: 500px
+      text-align: center
+      background-color: #fff
+      box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+      border-bottom-left-radius: 20px
+      border-bottom-right-radius: 20px
+      margin: 105px 0
+      .form__date
+        text-transform: uppercase
+        color: #000
+        border: none
+        text-align: center
+        font-size: 18px
+        outline: none
+      .form__time
+        text-transform: uppercase
+        color: #000
+        border: none
+        font-size: 18px
+        text-align: center
+        outline: none
+      .grey-line
+        width: 100px
+        color: #d7d7d7
+        margin-top: 25px
+        margin-bottom: 25px
+      .form__p
+        color: #000
+        text-transform: uppercase
+        text-align: center
+        margin-top: 30px
+        margin-bottom: 50px
+    .form-btn
+      color: #fff
+      font-size: 18px
+      font-family: Open Sans, sans-serif
+      border: none
+      outline: none
+      border-radius: 20px
+      padding: 15px 50px
+      background-color: #5b6ceb
+      margin-bottom: 50px
+.comments
+  clear: left
+  position: relative
+  z-index: 1
+  height: 500px
+  .layout
+    z-index: 1
+    position: relative
+    background: #fff
+  &:after
+    content: ""
+    background: url(../images/lotos.png) no-repeat
+    display: block
+    width: 80%
+    height: 165%
+    position: absolute
+    bottom: 0
+    z-index: -1
+    background-size: cover
+    left: 20%
+  .slick-slider .slick-track, .slick-slider .slick-list
+    box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+    border-radius: 130px
+    overflow: visible
+  .slick-initialized .slick-slide
+    position: relative
+  .sl2_slide
+    position: relative
+    border-radius: 10px
+  .client__img
+    border-radius: 50%
+    float: left
+    width: 125px
+    height: 125px
+    margin-top: 50px
+    margin-left: 65px
+    margin-bottom: 80px
+  .disc
+    height: 150px
+    width: 150px
+    border-radius: 50%
+    position: absolute
+    top: 37px
+    left: 51px
+    border: 1px solid #dadada
+  .comments__p
+    float: left
+    blockquote
+      width: 700px
+      height: auto
+      font-family: "Open Sans", sans-serif
+      font-size: 14px
+      margin-left: 90px
+      margin-top: 50px
+      p
+        margin-top: 0
+      span
+        position: relative
+        &:before
+          content: ''
+          background-image: url(../images/quotes.png)
+          position: absolute
+          left: -50px
+          top: -10px
+          width: 21px
+          height: 15px
+          display: block
+        &:after
+          content: ' '
+          background-image: url(../images/quotes-close.png)
+          width: 21px
+          height: 15px
+          float: right
+          position: relative
+          right: -20px
+          top: 20px
+      cite:after
+        content: ""
+        width: 1px
+        height: 80px
+        background: #d7d7d7
+        position: absolute
+        left: 50px
+        top: 85px
+
+  .comments .caption
+    clear: left
+    position: absolute
+    left: 46%
+    top: 46%
+  .sl2__img
+    float: left
+    clear: both
+    border-radius: 50%
+    width: 62px
+    height: 62px
+    margin-right: 20px
+  .small-disc
+    position: absolute
+    top: -6px
+    left: -5px
+    border-radius: 50%
+    border: 1px solid #d7d7d7
+    width: 70px
+    height: 70px
+  .comments__p
+    position: relative
+    z-index: 1
+    float: left
+    font-family: Open Sans, sans-serif
+    font-size: 14px
+  .caption-01
+    color: #b5b5b5
+    margin-bottom: 10px
+  .caption-02
+    color: #5b6ceb
+    font-weight: bold
+    font-size: 16px
+  .comments__client
+    font-style: italic
+    margin-bottom: 35px
+  .caption
+    clear: left
+    position: absolute
+    left: 33%
+    top: 87%
+    z-index: 5
+  .caption-03
+    float: left
+    font-weight: bold
+    color: #555
+  .caption-04
+    font-size: 12px
+    color: #777
+.sl2
+  position: relative
+  .slick-dots
+    position: absolute
+    top: 20%
+    left: 60px
+  .slick-dots li button
+    border: 1px solid #d7d7d7
+    z-index: 100
+    position: absolute
+    border-radius: 50%
+    right: 50%
+  .slick-dots li button:before
+    font-size: 10px
+    content: ''
+    border-radius: 50%
+  .slick-dots li.slick-active button:before
+    content: ""
+    border-radius: 50%
+    width: 10px
+    height: 10px
+    background-color: $color
+    border: 1px solid $color
+    position: absolute
+    top: 3px
+    left: 3px
+  .slick-dots li.slick-active button:after
+    content: ""
+    display: block
+    width: 20px
+    height: 20px
+    border: 1px solid $color
+    position: absolute
+    border-radius: 50%
+    left: -2px
+    top: -2px
+  .slick-dots li
+    margin: 0 11px
+    display: block
+    position: absolute
+    &:first-child
+      right: 0
+      top: 0
+    &:nth-child(2)
+      right: 0
+      top: 25px
+    &:nth-child(3)
+      right: 0
+      top: 50px
+    &:last-child
+      right: 0
+      top: 75px
+  .slick-prev, .slick-next
+    bottom: -28px
+    z-index: 2
+    border-radius: 50%
+    background-color: #fff
+    width: 30px
+    height: 30px
+    box-shadow: 0 20px 50px 0 rgba(149, 177, 252, 0.6)
+  .slick-prev
+    left: 27%
+    &:before
+      content: '\f104'
+      color: #5b6ceb
+      font-size: 20px
+  .slick-next
+    right: 44%
+    &:before
+      content: '\f105'
+      color: #5b6ceb
+      font-size: 20px
+.footer
+  position: relative
+  width: 100%
+  display: block
+  color: #fff
+  font-size: 14px
+  font-family: Open Sans, sans-serif
+  background-color: #5b6ceb
+  .footer__top
+    position: relative
+    .footer__about
+      float: left
+      width: 49%
+      .footer__about__h3
+        text-transform: uppercase
+        padding: 90px 0 60px 0
+        margin: 0
+      .footer__about__p
+        width: 73%
+        margin-top: 0
+        margin-bottom: 70px
+        font-family: Open Sans, sans-serif
+        font-size: 14px
+    .footer__contact
+      float: left
+      width: 48%
+      .footer__contact__h3
+        text-transform: uppercase
+        padding: 90px 0 60px 0
+        margin: 0
+      .footer__contact__ul
+        padding: 0
+        margin: 0
+        columns: 2
+        .contact
+          list-style: none
+          padding-left: 35px
+        .location
+          background: url(../images/location.png) no-repeat 0 50%
+        .gmail
+          background: url(../images/mail.png) no-repeat 0 50%
+        .phone
+          background: url(../images/phone-call.png) no-repeat 0 50%
+          margin-top: 30px
+        .site
+          background: url(../images/planet-earth.png) no-repeat 0 50%
+          margin-top: 50px
+    .footer__social
+      clear: both
+      padding: 0
+      margin-bottom: 105px
+      .social
+        display: inline-block
+        float: left
+        list-style: none
+        padding-left: 18px
+  .footer__bottom
+    background-color: #5363d8
+    font-size: 16px
+    font-family: Open Sans, sans-serif
+    color: #b7bffc
+    text-align: center
+    padding: 40px 0
+
+@media (min-width: 978px) and (max-width: 1199px)
+  .layout
+    width: 978px
+  .nav .menu__item:nth-child(4)
+    padding-left: 220px
+  .trial
+    background-position: 48% 0
+  .trial #trial-class
+    margin-left: 190px
+  .trial .caption
+    margin-left: 530px
+  .trial .caption h2
+    font-size: 40px
+  .trial .caption h3
+    font-size: 31px
+  .yoga-program .classes
+    text-align: center
+  .yoga-program p
+    text-align: left
+  .about-us__text
+    margin-right: 35px
+    margin-left: 15px
+  .yoga-benefits
+    position: relative
+    ul
+      text-align: center
+      padding-bottom: 65px
+      .top:nth-child(4),
+      .top:nth-child(5),
+      .top:nth-child(6)
+        margin-top: 60px
+      .top:nth-child(7),
+      .top:nth-child(8)
+        display: none
+  .classes-buy
+    margin-bottom: 125px
+    .subscription
+      .price
+        float: none
+        margin-top: 75px
+      #buy-form
+        margin: 0 auto
+  .footer
+    display: block
+    .footer__top
+      margin-left: 50px
+      .footer__about
+        width: 42%
+
+@media (min-width: 768px) and (max-width: 977px)
+  .layout
+    width: 768px
+
+
+
+
+
+
+
+
+
